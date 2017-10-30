@@ -1,0 +1,19 @@
+---
+title: "feibr"
+author: "David Chiu"
+date: "2017/10/30"
+output: html_document
+---
+
+## R Demo 
+```{r}
+data(anscombe)
+#View(anscombe)
+plot(y1 ~ x1, data = anscombe)
+fit <- lm(y1 ~ x1, data = anscombe)
+fit
+
+plot(y1 ~ x1, data = anscombe)
+abline(fit, col = "red")
+
+```
